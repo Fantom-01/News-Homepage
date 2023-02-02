@@ -1,0 +1,107 @@
+@font-face{
+    font-family: "CustomFont";
+    src:url("/assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+}
+*{
+    box-sizing: border-box;
+    font-family: "CustomFont";
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.nav--links{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+header{
+    display: flex;
+    padding: 40px;
+    margin-top: -30px;
+}
+#header--section{
+    width: 68%;
+    height: 500px;
+    margin-right: 2%;
+    display: grid;
+    grid-template-areas:
+    'image image'
+    'text div'
+    ;
+}
+#header--section .image{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    background-image: url(/assets/images/image-web-3-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: image;
+}
+#header--section .text{
+    grid-area: text;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 900;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#header--section .btn-text{
+    /* border: 1px solid red; */
+    grid-area: div;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.btn-text p{
+    font-size: 15px;
+    line-height: 22px;
+    color: hsl(0, 0%, 23%);
+    margin-bottom: auto;
+}
+.btn-text button{
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    letter-spacing: 2px;
+}
+#header--aside{
+    background-color: black;
+    height: 500px;
+    width: 30%;
+    padding: 20px;
+}
+#header--aside h2{
+    color: hsl(35, 77%, 62%);
+    font-size: 30px;
+}
+.aside--text{
+    color: white;
+}
+.aside--text p{
+    font-size: 15px;
+    color: hsl(0, 0%, 47%);
+}
