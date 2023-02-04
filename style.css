@@ -32,10 +32,12 @@ nav{
 .nav--links:hover{
     color: hsl(5, 85%, 63%);
 }
+/*hfdjfdgoekksjfwhfwrfwnbnbdfwnejwrjbwkejbsgg*/
 header{
     display: flex;
     padding: 40px;
     margin-top: -30px;
+    overflow: hidden;
 }
 #header--section{
     width: 68%;
@@ -70,7 +72,6 @@ header{
     justify-content: flex-start;
 }
 #header--section .btn-text{
-    /* border: 1px solid red; */
     grid-area: div;
     display: flex;
     flex-direction: column;
@@ -147,4 +148,45 @@ main{
     font-weight: 800;
     font-size: 20px;
     margin: 15px 0;
+}
+
+@media screen and (max-width: 945px) {
+    header{
+        display: flex;
+        padding: 40px;
+        margin-top: -30px;
+        flex-direction: column;
+        width: 100%;
+    }
+    #header--section{
+        width: 100%;
+    }
+    #header--aside{
+        width: 100%;
+        margin-top: 10px;
+    }
+    main{
+        display: flex;
+        padding: 40px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .main--item{
+        display: flex;
+        flex-direction: row;
+        margin: 5px 0;
+    }
+    .main--img{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    body{
+        background-color: gray;
+    }
+    #header--section{
+        display: flex;
+        flex-direction: column;
+    }
 }
