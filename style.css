@@ -29,6 +29,9 @@ nav{
     color: black;
     padding: 20px;
 }
+.nav--links:hover{
+    color: hsl(5, 85%, 63%);
+}
 header{
     display: flex;
     padding: 40px;
@@ -81,27 +84,67 @@ header{
     color: hsl(0, 0%, 23%);
     margin-bottom: auto;
 }
-.btn-text button{
+.btn-text a{
     background-color: hsl(5, 85%, 63%);
     color: white;
     padding: 10px 20px;
     border: none;
     letter-spacing: 2px;
 }
+.btn-text a:hover{
+    background-color: black;
+    cursor: pointer;
+}
 #header--aside{
     background-color: black;
     height: 500px;
     width: 30%;
     padding: 20px;
+    overflow-y: hidden;
 }
 #header--aside h2{
     color: hsl(35, 77%, 62%);
-    font-size: 30px;
+    font-size: 42px;
+    margin-bottom: 5px;
 }
 .aside--text{
     color: white;
+    padding: 5px 0px 15px 0px;
+    border-bottom: 1px solid hsl(0, 0%, 47%);;
 }
 .aside--text p{
     font-size: 15px;
     color: hsl(0, 0%, 47%);
+}
+
+main{
+    display: flex;
+    padding: 40px;
+}
+.main--item{
+    display: flex;
+    flex-direction: row;
+}
+.main--img img{
+    width: 120px;
+    height: 150px;
+}
+.main--text{
+    height: 150px;
+    /* overflow: scroll; */
+    margin: 0 10px;
+    padding-top: 10px;
+}
+.main--text p{
+    font-size: 15px;
+}
+.main--text--num{
+    color: rgb(192, 192, 192);
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+.main--text--a{
+    font-weight: 800;
+    font-size: 20px;
+    margin: 15px 0;
 }
