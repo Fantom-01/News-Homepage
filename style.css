@@ -18,6 +18,9 @@ body{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+#menu{
+    display: none;
+}
 nav{
     display: flex;
     align-items: center;
@@ -31,6 +34,9 @@ nav{
 }
 .nav--links:hover{
     color: hsl(5, 85%, 63%);
+}
+#menu-icon{
+    display: none;
 }
 /*hfdjfdgoekksjfwhfwrfwnbnbdfwnejwrjbwkejbsgg*/
 header{
@@ -181,12 +187,57 @@ main{
     }
 }
 
-@media screen and (max-width: 660px) {
-    body{
-        background-color: gray;
+@media screen and (max-width: 675px) {
+    #menu-icon{
+        display: block;
+    }
+    #menu-icon-close{
+        /* position: absolute; */
+    }
+    #menu{
+        height: 100%;
+        width: 70vw;
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: block;
+        background-color: white;
+        padding: 20px;
+    }
+    #menu-icon-div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #menu-list{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .menu--links{
+        margin: 15px 0 15px 0;
+    }
+    .link--div{
+        display: none;
     }
     #header--section{
         display: flex;
         flex-direction: column;
+        height: max-content;
+        padding: 0;
+    }
+    .image{
+        margin-bottom: 0px;
+    }
+    .text{
+        margin-top: -15px;
+        margin-bottom: -60px;
+    }
+    .btn-text{
+        margin-left: -10px;
+        padding: 0;
+    }
+    .btn-text a{
+        margin: 10px 0;
     }
 }
